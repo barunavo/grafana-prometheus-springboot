@@ -1,0 +1,31 @@
+management:
+  security:
+    enabled: false
+  endpoint:
+    health:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# spring:
+#   profiles:
+#     include: charon
+
+server:
+  use-forward-headers: true
+
+# charon:
+#   mappings:
+#   - name: grafana
+#     path: /grafana
+#     destination: http://localhost:3000
+#     strip-path: true
+#     asynchronous: false
+#   tracing:
+#     enabled: true
+
+
+
+  

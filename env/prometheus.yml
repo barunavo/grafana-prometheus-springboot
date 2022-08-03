@@ -16,14 +16,8 @@ scrape_configs:
     scrape_interval: 15s
     static_configs:
       - targets: ['localhost:9090']
-
-  - job_name: 'spring-metrics'
-    metrics_path: '/metrics'
-    scrape_interval: 5s
-    static_configs:
-      - targets: ['HOST_IP:8080']
-  - job_name:       'spring-boot-app'
-    scrape_interval: 5s  
-    metrics_path: /prometheus
+  - job_name: 'spring-boot-web-app'
+    metrics_path: '/prometheus'
     static_configs:
       - targets: ['web:8080']
+

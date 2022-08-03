@@ -1,5 +1,3 @@
-#THIS_FILE := $(lastword $(MAKEFILE_LIST))
-
 .PHONY: build up start down destroy stop restart logs logs-web ps login-web login-prometheus login-grafana 
 
 
